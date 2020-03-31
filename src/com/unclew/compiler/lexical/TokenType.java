@@ -8,6 +8,7 @@ package com.unclew.compiler.lexical;
  * @since 1.0
  */
 public enum TokenType {
+    INIT, // 初始化
     IDENTIFY, // 标识符
     GT, // >
     GE, // >=

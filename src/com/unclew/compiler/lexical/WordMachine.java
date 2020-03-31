@@ -17,4 +17,6 @@ public interface WordMachine {
 
     // operation
     void next(int offset); // 滑动到下 {offset} 个字符
+    void reset();
+    void fallback(); // 退一步
 }

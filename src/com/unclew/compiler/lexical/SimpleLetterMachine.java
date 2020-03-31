@@ -41,4 +41,28 @@ public class SimpleLetterMachine implements WordMachine {
         if(cursor < str.length())
             cursor++;
     }
+
+    @Override
+    public void reset() {
+        cursor = 0;
+    }
+
+    @Override
+    public void fallback() {
+        if(cursor > 1) {
+            cursor--;
+        }
+    }
+
+
+    public static void main(String[] args) {
+        // test
+        String str = "jdaskjhdgashdgasgdasdgasjgdhkjasgdkasgdas";
+
+        SimpleLetterMachine slm = new SimpleLetterMachine(str);
+        while(!slm.isEnd()) {
+            System.out.print(slm.current());
+            slm.next(1);
+        }
+    }
 }
