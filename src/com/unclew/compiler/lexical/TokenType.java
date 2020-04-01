@@ -12,5 +12,12 @@ public enum TokenType {
     IDENTIFY, // 标识符
     GT, // >
     GE, // >=
-    DIGIT // 数字
+    DIGIT, // 数字
+    INT,
+    INT_int0,
+    INT_int1,
+    ASSIGN,
+    PLUS,
+    MULTIPLY
+
 }
